@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  
+</head>
+<body>
+  <header>
+    <h1>PORTFOLIO</h1>
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('about')">About</button>
+      <button onclick="showSection('skills')">Skills</button>
+      <button onclick="showSection('projects')">Projects</button>
+      <button onclick="showSection('education')">Education</button>
+      <button onclick="showSection('contact')">Contact</button>
+    </nav>
+  </header>
+
+  <div class="main-content">
+    <div class="content">
+      <section id="home" class="active">
+        <div class="home-container">
+          <img src="earl.jpg" class="profile-pic animated"/>
+          <div class="home-text fade-up">
+            <h1>Hi, I'm John Earl Elequillo</h1>
+            <ul style="list-style: none; padding-left:0; margin-top: 30px;">
+              <li><strong>Date of Birth:</strong> March 10, 2003</li>
+              <li><strong>Age:</strong> 22</li>
+              <li><strong>Nationality:</strong> Filipino</li>
+              <li><strong>Address:</strong> Purok 2 Taripe Drive JBD, Mangagoy Bislig City</li>
+              <li><strong>Contact Number:</strong> +639946946883</li>
+              <li><strong>Civil Status:</strong> Single</li>
+              <li><strong>Languages Spoken:</strong> English, Filipino</li>
+              <li><strong>Religion:</strong> Roman Catholic</li>
+            </ul>
+           
+            <div style="margin-top: 20px;">
+              <a href="Earl Resume.pdf" target="_blank" class="resume-button">
+                <i class="fas fa-file-lines"></i> View Resume
+              </a>
+            </div>
+            
+            
+            
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am John Earl, a goal-oriented and self-disciplined person currently taking up a bachelor's degree in information technology at De La Salle John Bosco College. Committed to self-improvement, I'm seriously working on my physical fitness by exercising in regular sessions in the gym and running. Beyond academics and athletics, I enjoy playing online games and watching movies for recreation and relaxation.</p>
+
+        <p>I am proud to be open-minded, patient, faithful, and flexible qualities that enable me to form deep connections and remain humble. In whatever I do in my studies, self-improvement, or relationships, I always make it a point to be humble yet continuously improve.</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>Communication Skills - I have ability to express ideas clearly through speaking, writing, and listening.
+            It builds strong relationships, resolve conflicts, and work effectively in teams</li>
+          <li>Time Management - I have ability to plan and control how much time to spend my specific activities.
+            It increases productivity and reduces stress by meeting deadlines efficiently.</li>
+          <li>Problem-Solving -  I have ability to find solutions in ifficult or complex issues and enables to overcome challenges and make smart decisions quickly.</li>
+          <li>Adaptability - Being able to adjust the new conditions and environments.It also helps me to stay effective during changes, such as learning new technology or adjusting to a new role.</li>
+          <li>Self-Motivation - Taking initiative and staying focused without needing constant reminders.It leads to greater independence and long-term success in studies.</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <div class="single-project">
+          <h2 class="project-title">Current Project: DENR-CENRO BISLIG IT Ticketing System</h2>
+          <h3 class="rolee">Role: System Analyst</h3>
+          <img src="DENR Dashboard.png" class="animated-image" alt="My Works">
+        </div>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul class="education-list">
+          <li><strong>Elementary:</strong> Mangagoy Central Elementary School (2009 - 2015)</li>
+          <li><strong>Junior High School:</strong> Andres Soriano Colleges of Bislig (2015 - 2019)</li>
+          <li><strong>Senior High School:</strong> De La Salle John Bosco College (2019 - 2021)</li>
+          <li><strong>College:</strong> De La Salle John Bosco College - Bachelor of Science in Information Technology (2021 - Present)</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-details">
+          <p>Email: elequillojohnearl17@gmail.com</p>
+          <p>Phone: +639946946883</p>
+        </div>
+        <div class="contact-buttons">
+          <a href="https://www.facebook.com/johnearl.elequillo.3" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/earlelequillo/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/johnearl-elequillo-385200289/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <div class="favorite-quotes">
+          <h3>Favorite Quote</h3>
+          <p style="font-style: italic;">"Don’t stop hangga't di ka pa masarap" – Smart Fit</p>
+        </div>
+      </section>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

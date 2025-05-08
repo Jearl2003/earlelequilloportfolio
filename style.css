@@ -1,0 +1,295 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1c1e22;
+  color: #e1e8ed;
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  overflow-x: hidden; 
+}
+
+header {
+  background: #15202b;
+  color: #e1e8ed;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap; 
+  width: 100%;
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+header h1 {
+  font-size: 22px;
+  margin: 0;
+  flex: 1 1 auto; 
+  text-align: left;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  width: auto;
+  flex: 1 1 auto; 
+}
+
+
+nav button {
+  background: #2c2f36;
+  color: #e1e8ed;
+  border: none;
+  padding: 6px 12px; 
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px; 
+}
+
+nav button:hover {
+  background: #4078c0;
+}
+
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
+
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  padding: 70px 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.home-text.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.home-text ul li {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.profile-pic {
+  width: 100%;
+  max-width: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 1s ease-out forwards, pulse 2.5s infinite ease-in-out;
+}
+
+@keyframes fadeInScale {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 123, 255, 0.6);
+  }
+}
+
+
+#about, #skills, #education, #contact {
+  padding: 30px;
+  max-width: 700px;
+  margin: auto;
+}
+
+#about h2, #skills h2, #education h2, #contact h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+#about p, #skills li, .education-list li {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.resume-button {
+  display: inline-block;
+  background-color: #4078c0;
+  color: #fff;
+  padding: 10px 18px;
+  margin: 10px 10px 0 0;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.resume-button i {
+  margin-right: 8px;
+}
+
+.resume-button:hover {
+  background-color: #2c2f36;
+}
+
+
+#skills ul, .education-list {
+  list-style: none;
+  padding: 0;
+  font-size: 18px;
+}
+
+
+.project-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.single-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 850px;
+  margin: auto;
+}
+
+.animated-image {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  animation: fadeInUp 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.rolee {
+  animation: fadeInUp 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.contact-details p {
+  font-size: 18px;
+  margin: 10px 0;
+  animation: fadeInUp 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+.contact-buttons {
+  margin-top: 20px;
+}
+
+.contact-buttons a {
+  margin: 0 15px;
+  color: #1da1f2;
+  font-size: 28px;
+  transition: color 0.3s;
+}
+
+.contact-buttons a:hover {
+  color: #e1e8ed;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #1da1f2;
+}
+
+.social-icons a:hover {
+  color: #e1e8ed;
+}
+
+.favorite-quotes {
+  margin-top: 50px;
+  animation: fadeInUp 1.5s ease-out forwards;
+  opacity: 0;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  header h1 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  nav {
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  nav button {
+    font-size: 14px;
+    margin: 5px;
+  }
+}
+
+
+  .home-container {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .home-text {
+    text-align: center;
+  }
+
+  .profile-pic {
+    max-width: 250px;
+  }
+
+  #about h2, #skills h2, #education h2, #contact h2 {
+    font-size: 40px;
+  }
+
+  .project-title {
+    font-size: 30px;
+  }
